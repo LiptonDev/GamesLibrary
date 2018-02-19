@@ -1,0 +1,28 @@
+﻿<controls:MetroWindow
+    x:Class="GamesLibrary.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:GamesLibrary.View"
+    mc:Ignorable="d"
+    TitleCaps="False"
+    Title="GamesLibrary" 
+    Height="350" 
+    MinHeight="350"
+    Width="525"
+    MinWidth="525"
+    ResizeMode="CanResizeWithGrip"
+    GlowBrush="{DynamicResource AccentColorBrush}"
+    NonActiveGlowBrush="Red"
+    Icon="..\kybik.ico">
+
+    <Frame Focusable="False"
+           NavigationUIVisibility="Hidden">
+        <Frame.Content>
+            <view:Play/>
+        </Frame.Content>
+    </Frame>
+
+</controls:MetroWindow>

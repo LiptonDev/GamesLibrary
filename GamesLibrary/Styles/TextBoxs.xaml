@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls">
+
+    <Style TargetType="TextBox" BasedOn="{StaticResource MetroTextBox}" x:Key="BaseTextBox">
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="FontFamily" Value="Calibri"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="controls:TextBoxHelper.UseFloatingWatermark" Value="True"/>
+        <Setter Property="controls:TextBoxHelper.ClearTextButton" Value="True"/>
+    </Style>
+
+    <Style TargetType="PasswordBox" BasedOn="{StaticResource Win8MetroPasswordBox}" x:Key="BasePasswordBox">
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="FontFamily" Value="Calibri"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="controls:TextBoxHelper.UseFloatingWatermark" Value="True"/>
+        <Setter Property="controls:TextBoxHelper.ClearTextButton" Value="True"/>
+        <Setter Property="controls:PasswordBoxHelper.CapsLockWarningToolTip" Value="Включен Caps Lock"/>
+    </Style>
+
+</ResourceDictionary>
